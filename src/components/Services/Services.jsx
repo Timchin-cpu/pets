@@ -1,6 +1,17 @@
 import React from "react";
 import styles from "./Services.module.css";
 function Services() {
+  const tg = window.Telegram.WebApp;
+  useEffect(() => {
+      tg.BackButton.show();
+      tg.BackButton.onClick(() => {
+        window.history.back();
+      });
+      
+      return () => {
+        tg.BackButton.hide();
+      };
+    }, []);
   return (
     <div
       className="Services"
