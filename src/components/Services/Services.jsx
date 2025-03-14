@@ -11,7 +11,7 @@ function Services() {
       return () => {
         tg.BackButton.hide();
       };
-    }, []);
+    }, tg.BackButton]);
   return (
     <div
       className="Services"
