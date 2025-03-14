@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import styles from "./Services.module.css";
 function Services() {
   const tg = window.Telegram.WebApp;
